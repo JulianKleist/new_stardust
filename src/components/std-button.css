@@ -1,0 +1,21 @@
+span {
+    height: 50px;
+    min-width: 200px;
+    padding: 10px 40px;
+    border: 1px solid #747272;
+    text-align: center;
+}
+
+span:hover {
+    background-color: var(--violet);
+}
+
+span:hover {
+    background-color: var(--violet);
+}
+
+
+span {
+    color: white;
+    font-weight: 200;
+}

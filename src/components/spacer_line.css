@@ -1,0 +1,4 @@
+.horizontal_line {
+    background-color: var(--dark-gray);
+    border-radius: 5px;
+}
