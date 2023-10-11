@@ -171,18 +171,40 @@ function App() {
               100% Resultados reales que podemos mostrarte en una llamada.</p>
           </div>
         </div>
-        {/* <div className='row'>
-          <div className='d-flex flex-wrap col-12 col-md-6'> */}
+        <div className='row'>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
             <Images ImageUrl={ImageUrl} />
-          {/* </div>
-        </div> */}
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
+            <Images ImageUrl={ImageUrl} />
+          </div>
+          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
+            <Images ImageUrl={ImageUrl} />
+          </div>
+        </div>
+
+
         <div className='row'>
           <div className='d-flex justify-content-center my-3 col-12'>
             <SpacerLine width="3px" height="150px" />
