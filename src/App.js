@@ -113,41 +113,29 @@ function App() {
             <p>Conectamos a tu empresa un equipo AAA compuesto por especialistas en Paid Ads, Data Analytics, Publicidad, Diseño y Copywriting. Nuestro equipo pondrá en marcha nuestro framework de trabajo, el mismo que venimos corriendo para todos nuestros casos de éxito. En menos de doce semanas vas a experimentar un crecimiento significativo en tu facturación junto con un aumento en la notoriedad. ¿Qué garantía tenes? Más allá de nuestra extensa cartera de casos de éxito en comercio electrónico proponemos una modalidad única en donde si no vendés no pagás, vamos variabilizados completamente.</p>
           </div>
         </div>
-        {/* <div className='row'>
+        <div className='row'>
           <div className='d-flex justify-content-center flex-column flex-md-row my-3 col-12'>
             <div className='row'>
-              <div className='col-md-4'>
+              <div className='col-md-4 text-white text-center'>
                 <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
-                <div className='row'>
-                  <div className='d-flex justify-content-center col-6 col-md-11 mx-auto text-center text-white'>
-                    <p>Fernando Farré, Infinit Lead Generation</p>
-                  </div>
-                </div>
+                <p>Fernando Farré, Infinit Lead Generation</p>
               </div>
             </div>
 
             <div className='row'>
-              <div className='col-md-4'>
+              <div className='col-md-4 text-white text-center'>
                 <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
-                <div className='row'>
-                  <div className='d-flex justify-content-center col-6 col-md-11 mx-auto text-center text-white'>
-                    <p>Fernando Farré, Infinit Lead Generation</p>
-                  </div>
-                </div>
+                <p>Fernando Farré, Infinit Lead Generation</p>
               </div>
             </div>
             <div className='row'>
-              <div className='col-md-4'>
+              <div className='col-md-4 text-white text-center'>
                 <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
-                <div className='row'>
-                  <div className='d-flex justify-content-center col-6 col-md-11 mx-auto text-center text-white'>
-                    <p>Fernando Farré, Infinit Lead Generation</p>
-                  </div>
-                </div>
+                <p>Fernando Farré, Infinit Lead Generation</p>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className='row my-2'>
           <div className='d-flex justify-content-center my-3 col-12'>
             <SpacerLine width="3px" height="150px" />
@@ -228,7 +216,7 @@ function App() {
           </div>
         </div>
         <div className='row'>
-          <div className='col-12'>
+          <div className='col-12 d-flex justify-content-center'>
             <div class="calendly-inline-widget" data-url="https://calendly.com/ejirouweghrepha"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           </div>
@@ -245,18 +233,14 @@ function App() {
             <SpacerLine height="3px" />
           </div>
         </div>
-        <div className='row'>
-          <div className='d-flex justify-content-center mb-3 col-12'>
+        <div className='row mt-5'>
+          <div className='mb-3 col-12 col-md-6 col-xl-4'>
             <Blog Image={image} />
           </div>
-        </div>
-        <div className='row'>
-          <div className='d-flex justify-content-center mb-3 col-12'>
+          <div className='mb-3 col-12 col-md-6 col-xl-4'>
             <Blog Image={image} />
           </div>
-        </div>
-        <div className='row'>
-          <div className='mb-3 col-12'>
+          <div className='mb-3 col-12 col-md-6 col-xl-4'>
             <Blog Image={image} />
           </div>
         </div>
