@@ -82,8 +82,14 @@ function App() {
             <p>Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM y USA que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
           </div>
         </div>
-        <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
         <div className='row'>
+          <div className='d-flex justify-content-center'>
+            <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+              VideoHeight={"230px"}
+              VideoWidth={"400px"} />
+            <div className='row'>
+            </div>
+          </div>
           <div className='col-12 text_video text-center'>
             <p>Matias Solina, Founder DCG</p>
           </div>
@@ -115,23 +121,40 @@ function App() {
         </div>
         <div className='row'>
           <div className='d-flex justify-content-center flex-column flex-md-row my-3 col-12'>
-            <div className='row'>
+          <div className='row'>
               <div className='col-md-4 text-white text-center'>
-                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
-                <p>Fernando Farré, Infinit Lead Generation</p>
+                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+                  VideoHeight={"120px"}
+                  VideoWidth={"250px"} />
+              </div>
+              <div className='row'>
+                <div className='col-12 col-lg-10 col-xl-8 text-white text-center'>
+                  <p>Fernando Farré, Infinit Lead Generation</p>
+                </div>
               </div>
             </div>
-
             <div className='row'>
               <div className='col-md-4 text-white text-center'>
-                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
-                <p>Fernando Farré, Infinit Lead Generation</p>
+                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+                  VideoHeight={"120px"}
+                  VideoWidth={"250px"} />
+              </div>
+              <div className='row'>
+                <div className='col-12 col-lg-10 col-xl-8 text-white text-center'>
+                  <p>Fernando Farré, Infinit Lead Generation</p>
+                </div>
               </div>
             </div>
             <div className='row'>
               <div className='col-md-4 text-white text-center'>
-                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"} />
-                <p>Fernando Farré, Infinit Lead Generation</p>
+                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+                  VideoHeight={"120px"}
+                  VideoWidth={"250px"} />
+              </div>
+              <div className='row'>
+                <div className='col-12 col-lg-10 col-xl-8 text-white text-center'>
+                  <p>Fernando Farré, Infinit Lead Generation</p>
+                </div>
               </div>
             </div>
           </div>

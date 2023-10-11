@@ -3,13 +3,13 @@ import './video-player.css';
 
 class VideoPlayer extends React.Component {
     render() {
-        const { embedUrl } = this.props;
+        const { embedUrl, VideoHeight, VideoWidth } = this.props;
 
         return (
             <div className="video-player" >
                 <iframe
-                    height={"230px"}
-                    width={"400px"}
+                    height={VideoHeight}
+                    width={VideoWidth}
                     src={embedUrl}
                     title="YouTube Video Player"
                     frameborder="0"
