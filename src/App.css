@@ -13,6 +13,11 @@
   background-color: var(--black);
 }
 
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./WorkSans/WorkSans-Black.ttf') format('ttf');
+}
+
 .text_video {
   color: var(--dark-gray);
 }
@@ -24,9 +29,15 @@
 }
 
 .title {
+  font-family: "Work Sans";
   font-weight: 400;
 }
 .title_color {
+  font-family: "Work Sans";
   font-weight: 400;
   color: var(--violet);
+}
+
+.text {
+  font-family: "Work Sans";
 }

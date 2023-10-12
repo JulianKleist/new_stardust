@@ -1,3 +1,5 @@
+import './WorkSans/WorkSans-Black.ttf'
+import './WorkSans/WorkSans-Thin.ttf'
 import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -8,8 +10,6 @@ import StdButton from './components/std-button';
 import Images from './components/images';
 import Blog from './components/blog';
 import Footer from './components/footer';
-// // aos animations 
-// import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
 function App() {
@@ -76,9 +76,9 @@ function App() {
             <SpacerLine height="3px" />
           </div>
         </div>
-        <div className='row mt-3'>
+        <div className='row my-3'>
           <div className='m-auto col-12 col-md-12 col-lg-6 text-white text-center'>
-            <p className='fs-5'>Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM y USA que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
+            <p className='fs-5 text'>Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM y USA que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
           </div>
         </div>
         <div className='row'>
@@ -115,12 +115,12 @@ function App() {
         </div>
         <div className='row my-4'>
           <div className='m-auto col-11 text-white text-center'>
-            <p className='fs-5'>Conectamos a tu empresa un equipo AAA compuesto por especialistas en Paid Ads, Data Analytics, Publicidad, Diseño y Copywriting. Nuestro equipo pondrá en marcha nuestro framework de trabajo, el mismo que venimos corriendo para todos nuestros casos de éxito. En menos de doce semanas vas a experimentar un crecimiento significativo en tu facturación junto con un aumento en la notoriedad. ¿Qué garantía tenes? Más allá de nuestra extensa cartera de casos de éxito en comercio electrónico proponemos una modalidad única en donde si no vendés no pagás, vamos variabilizados completamente.</p>
+            <p className='fs-5 text'>Conectamos a tu empresa un equipo AAA compuesto por especialistas en Paid Ads, Data Analytics, Publicidad, Diseño y Copywriting. Nuestro equipo pondrá en marcha nuestro framework de trabajo, el mismo que venimos corriendo para todos nuestros casos de éxito. En menos de doce semanas vas a experimentar un crecimiento significativo en tu facturación junto con un aumento en la notoriedad. ¿Qué garantía tenes? Más allá de nuestra extensa cartera de casos de éxito en comercio electrónico proponemos una modalidad única en donde si no vendés no pagás, vamos variabilizados completamente.</p>
           </div>
         </div>
         <div className='row'>
           <div className='d-flex flex-column flex-md-row my-3 col-12'>
-          <div className='row my-1'>
+            <div className='row my-1'>
               <div className='col-md-4 text-white text-center'>
                 <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
                   VideoHeight={"120px"}
@@ -177,7 +177,7 @@ function App() {
         </div>
         <div className='row my-4'>
           <div className='m-auto col-12 fs-5 text-white text-center'>
-            <p>Todos nuestros clientes en las primeras 12 semanas experimentan un crecimiento enorme en sus ventas. Te presentamos alguno de nuestros casos de éxito, con capturas de pantalla de sus cuentas publicitarias.
+            <p className='text'>Todos nuestros clientes en las primeras 12 semanas experimentan un crecimiento enorme en sus ventas. Te presentamos alguno de nuestros casos de éxito, con capturas de pantalla de sus cuentas publicitarias.
               100% Resultados reales que podemos mostrarte en una llamada.</p>
           </div>
         </div>
@@ -234,7 +234,7 @@ function App() {
         </div>
         <div className='row my-4'>
           <div className='m-auto col-12 text-white text-center'>
-            <p className='fs-5'>Agenda una videollamada de diagnóstico y consultoría totalmente gratuita. Nuestros especialistas realizarán un diagnóstico y te brindará una evaluación de posibles alterativas para tu plan de crecimiento!</p>
+            <p className='fs-5 text'>Agenda una videollamada de diagnóstico y consultoría totalmente gratuita. Nuestros especialistas realizarán un diagnóstico y te brindará una evaluación de posibles alterativas para tu plan de crecimiento!</p>
           </div>
         </div>
         <div className='row'>
