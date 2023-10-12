@@ -1,6 +1,6 @@
 import './WorkSans/WorkSans-Black.ttf'
 import './WorkSans/WorkSans-Thin.ttf'
-import logo from './logo.svg';
+import logo from './assets/logo.png';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import SpacerLine from './components/spacer_line';
@@ -10,46 +10,80 @@ import StdButton from './components/std-button';
 import Images from './components/images';
 import Blog from './components/blog';
 import Footer from './components/footer';
-// import 'aos/dist/aos.css';
+import {useEffect} from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  const isScreenLarge = window.innerWidth >= 1440;
   const ImageUrl = 'https://placehold.it/350x200'
+  const ImageUrlLarge = 'https://placehold.it/620x280'
   const image = "https://placehold.it/200x200";
 
   return (
     <div className="App">
+      {/* nav_bar */}
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark pt-5 px-5 pb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"><img className='logo' src={logo} /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div className='container'>
-        <div className='row mt-5'>
+        <div className='row mt-5 pt-5'>
           <div className='col-12'>
-            <div className='text-white text-center'>
-              <h1 className='title fs-1'>Performance Digital</h1>
-              <h1 className='title_color fs-1'>completamente a Resultado.</h1>
+            <div className='text-white text-center mt-5'>
+              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Performance Digital</h1>
+              <h1 className='title_color fs-1' data-aos="fade-down" data-aos-duration="2000">completamente a Resultado.</h1>
             </div>
           </div>
         </div>
         <div className='row'>
           <div className='d-flex justify-content-center my-3 col-12'>
-            <SpacerLine height="3px" />
+            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000" />
           </div>
         </div>
         <div className='row my-2'>
           <div className='col-12 d-flex justify-content-center'>
             <div className='row'>
               <div className='col-4'>
-                <img src="https://placehold.it/107x30" />
+                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000"/>
               </div>
               <div className='col-4'>
-                <img src="https://placehold.it/107x30" />
+                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000"/>
               </div>
               <div className='col-4'>
-                <img src="https://placehold.it/107x30" />
+                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000"/>
               </div>
             </div>
           </div>
         </div>
         <div className='row mb-5'>
           <div className='d-flex justify-content-center my-3 col-12'>
-            <SpacerLine width="3px" height="150px" />
+            <SpacerLine width="3px" height="250px" />
           </div>
         </div>
         <div className='row'>
@@ -66,8 +100,8 @@ function App() {
         <div className='row mt-5'>
           <div className='col-12'>
             <div className='text-white text-center'>
-              <h1 className='title fs-1'>Somos un verdadero</h1>
-              <h1 className='title_color fs-1'>socio para crecer.</h1>
+              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500" >Somos un verdadero</h1>
+              <h1 className='title_color fs-1' data-aos="fade-down" data-aos-duration="2000" >socio para crecer.</h1>
             </div>
           </div>
         </div>
@@ -102,8 +136,8 @@ function App() {
         <div className='row mt-5'>
           <div className='col-12'>
             <div className='text-white text-center'>
-              <h1 className='title fs-1'>Nuestra oferta</h1>
-              <h1 className='title_color fs-1'>es simple y sencilla.</h1>
+              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Nuestra oferta</h1>
+              <h1 className='title_color fs-1' data-aos="fade-down" data-aos-duration="2000">es simple y sencilla.</h1>
             </div>
           </div>
         </div>
@@ -119,42 +153,24 @@ function App() {
           </div>
         </div>
         <div className='row'>
-          <div className='d-flex flex-column flex-md-row my-3 col-12'>
-            <div className='row my-1'>
-              <div className='col-md-4 text-white text-center'>
-                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
-                  VideoHeight={"120px"}
-                  VideoWidth={"250px"} />
-              </div>
-              <div className='row my-1'>
-                <div className='col-12 col-lg-10 col-xl-8 text-white text-center'>
-                  <p>Fernando Farré, Infinit Lead Generation</p>
-                </div>
-              </div>
+          <div className='d-flex flex-column flex-md-row  my-3 col-12'>
+            <div className='col-md-4 text-white text-center'>
+              <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+                VideoHeight={"120px"}
+                VideoWidth={"250px"} />
+              <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
             </div>
-            <div className='row my-1'>
-              <div className='col-md-4 text-white text-center'>
-                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
-                  VideoHeight={"120px"}
-                  VideoWidth={"250px"} />
-              </div>
-              <div className='row'>
-                <div className='col-12 col-lg-10 col-xl-8 text-white text-center'>
-                  <p>Fernando Farré, Infinit Lead Generation</p>
-                </div>
-              </div>
+            <div className='col-md-4 text-white text-center'>
+              <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+                VideoHeight={"120px"}
+                VideoWidth={"250px"} />
+              <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
             </div>
-            <div className='row'>
-              <div className='col-md-4 text-white text-center'>
-                <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
-                  VideoHeight={"120px"}
-                  VideoWidth={"250px"} />
-              </div>
-              <div className='row'>
-                <div className='col-12 col-lg-10 col-xl-8 text-white text-center'>
-                  <p>Fernando Farré, Infinit Lead Generation</p>
-                </div>
-              </div>
+            <div className='col-md-4 text-white text-center'>
+              <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+                VideoHeight={"120px"}
+                VideoWidth={"250px"} />
+              <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
             </div>
           </div>
         </div>
@@ -183,34 +199,34 @@ function App() {
         </div>
         <div className='row'>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
           <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={ImageUrl} />
+            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
           </div>
         </div>
 

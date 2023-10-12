@@ -18,6 +18,14 @@
   src: url('./WorkSans/WorkSans-Black.ttf') format('ttf');
 }
 
+.logo {
+  width: 100px;
+}
+
+.nav_bar {
+  background-color: var(--black);
+}
+
 .text_video {
   color: var(--dark-gray);
 }
