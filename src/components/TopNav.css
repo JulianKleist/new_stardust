@@ -1,0 +1,24 @@
+.navbar {
+    background-color: var(--black);
+}
+
+.brand,
+.list_item {
+    color: white;
+}
+
+.list_item:hover {
+    color: var(--gray);
+}
+
+.logo {
+    width: 200px;
+}
+
+.list_item {
+    font-weight: 200;
+}
+/* #basic-navbar-nav {
+    background-color: white;
+    width: 15px;
+} */
