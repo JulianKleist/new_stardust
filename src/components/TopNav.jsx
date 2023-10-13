@@ -2,6 +2,7 @@ import React from 'react';
 import  { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/logo.png';
 import './TopNav.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TopNav = () => {
 
@@ -40,7 +41,7 @@ const TopNav = () => {
                         <img className='logo' src={logo} />
                     </a>
                 </Navbar.Brand>
-                <Navbar.Toggle/>
+                <Navbar.Toggle  style={{color: "white"}}/>
                 <Navbar.Collapse>
                     <Nav className='ms-auto'>
                         {
