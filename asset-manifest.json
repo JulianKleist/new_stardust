@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/new_stardust/static/css/main.a620525a.css",
-    "main.js": "/new_stardust/static/js/main.aa4fd94e.js",
+    "main.css": "/new_stardust/static/css/main.0cbef229.css",
+    "main.js": "/new_stardust/static/js/main.1ae1d9cc.js",
     "static/js/787.41eea787.chunk.js": "/new_stardust/static/js/787.41eea787.chunk.js",
-    "static/media/WorkSans-Black.ttf": "/new_stardust/static/media/WorkSans-Black.380817dd411509f31570.ttf",
-    "static/media/WorkSans-Thin.ttf": "/new_stardust/static/media/WorkSans-Thin.6358be7f91112f9fe7b7.ttf",
     "static/media/logo.png": "/new_stardust/static/media/logo.0245f58ec552a8c603ef.png",
     "index.html": "/new_stardust/index.html",
-    "main.a620525a.css.map": "/new_stardust/static/css/main.a620525a.css.map",
-    "main.aa4fd94e.js.map": "/new_stardust/static/js/main.aa4fd94e.js.map",
+    "main.0cbef229.css.map": "/new_stardust/static/css/main.0cbef229.css.map",
+    "main.1ae1d9cc.js.map": "/new_stardust/static/js/main.1ae1d9cc.js.map",
     "787.41eea787.chunk.js.map": "/new_stardust/static/js/787.41eea787.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a620525a.css",
-    "static/js/main.aa4fd94e.js"
+    "static/css/main.0cbef229.css",
+    "static/js/main.1ae1d9cc.js"
   ]
 }
