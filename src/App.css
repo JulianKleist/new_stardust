@@ -11,12 +11,12 @@
 
 * {
   background-color: var(--black);
-  font-family: "Work Sans";
+  font-family: 'Work Sans', sans-serif;
 }
 
 @font-face {
   font-family: 'Work Sans';
-  src: url('./WorkSans/WorkSans-Black.ttf') format('ttf');
+  src: url('../public/WorkSans/WorkSans-Black.ttf') format('ttf');
 }
 
 .nav_bar {
@@ -34,15 +34,9 @@
 }
 
 .title {
-  font-family: "Work Sans";
-  font-weight: 400;
+  font-weight: 700;
 }
 .title_color {
-  font-family: "Work Sans";
-  font-weight: 400;
+  margin-top: -10px;
   color: var(--violet);
-}
-
-.text {
-  font-family: "Work Sans";
 }

@@ -9,7 +9,7 @@ class StdButton extends React.Component {
             <div className='row mt-4 mb-2' data-aos="fade-up"
             data-aos-duration="2000">
                 <div className='d-flex justify-content-center col-12'>
-                    <span>{text}</span>
+                    <span className='std_span'>{text}</span>
                 </div>
             </div>
         );

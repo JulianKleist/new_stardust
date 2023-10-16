@@ -1,5 +1,5 @@
 import React from 'react';
-import  { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from '../assets/logo.png';
 import './TopNav.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,44 +8,42 @@ const TopNav = () => {
 
     const menuData = [
         {
-            path:'/',
-            name:"DGC"
+            path: '/',
+            name: "DGC"
         },
         {
-            path:'/services',
-            name:"SERVICES"
+            path: '/services',
+            name: "SERVICES"
         },
         {
-            path:'/ecommerce',
-            name:"ECOMMERCE"
+            path: '/ecommerce',
+            name: "ECOMMERCE"
         },
         {
-            path:'/customers',
-            name:"CUSTOMERS"
+            path: '/customers',
+            name: "CUSTOMERS"
         },
         {
-            path:'/blog',
-            name:"BLOG"
+            path: '/blog',
+            name: "BLOG"
         },
         {
-            path:'/contact',
-            name:"CONTACT"
+            path: '/contact',
+            name: "CONTACT"
         }
     ];
-    
+
     return (
-        <Navbar className='navbar pt-4' expand="lg">
+        <Navbar data-bs-theme="dark" className='navbar pt-4' expand="lg">
             <Container>
                 <Navbar.Brand href='#'>
-                    <a class="navbar-brand text-white" href="#">
-                        <img className='logo' src={logo} />
-                    </a>
+                    <img className='logo' src={logo} />
                 </Navbar.Brand>
-                <Navbar.Toggle  style={{color: "white"}}/>
+                <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Nav className='ms-auto'>
                         {
-                            menuData.map((item)=>(
+                            menuData.map((item) => (
                                 <Nav.Link to={item.path} key={item.name}>
                                     <div className='list_item'>{item.name}</div>
                                 </Nav.Link>

@@ -1,6 +1,3 @@
-import './WorkSans/WorkSans-Black.ttf'
-import './WorkSans/WorkSans-Thin.ttf'
-import logo from './assets/logo.png';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import SpacerLine from './components/spacer_line';
@@ -34,7 +31,7 @@ function App() {
           <div className='col-12'>
             <div className='text-white text-center mt-5'>
               <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Performance Digital</h1>
-              <h1 className='title_color fs-1' data-aos="fade-down" data-aos-duration="1500">completamente a Resultado.</h1>
+              <h1 className='title title_color fs-1' data-aos="fade-down" data-aos-duration="1500">completamente a Resultado.</h1>
             </div>
           </div>
         </div>
@@ -230,12 +227,12 @@ function App() {
             <p className='fs-5 text' data-aos="fade-down" data-aos-duration="1500">Agenda una videollamada de diagnóstico y consultoría totalmente gratuita. Nuestros especialistas realizarán un diagnóstico y te brindará una evaluación de posibles alterativas para tu plan de crecimiento!</p>
           </div>
         </div>
-        <div className='row'>
+        {/* <div className='row'>
           <div className='col-12 d-flex justify-content-center'>
             <div class="calendly-inline-widget" data-url="https://calendly.com/ejirouweghrepha"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           </div>
-        </div>
+        </div> */}
         <div className='row mt-5 mb-3'>
           <div className='col-12 mt-5'>
             <div className='text-white text-center'>

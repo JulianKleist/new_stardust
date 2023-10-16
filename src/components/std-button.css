@@ -1,4 +1,4 @@
-span {
+.std_span {
     height: 50px;
     min-width: 200px;
     padding: 10px 40px;
@@ -6,16 +6,11 @@ span {
     text-align: center;
 }
 
-span:hover {
+.std_span:hover {
     background-color: var(--violet);
 }
 
-span:hover {
-    background-color: var(--violet);
-}
-
-
-span {
+.std_span {
     color: white;
     font-weight: 200;
 }
