@@ -8,26 +8,6 @@ const TopNav = () => {
 
     const menuData = [
         {
-            path: '/',
-            name: "DGC"
-        },
-        {
-            path: '/services',
-            name: "SERVICES"
-        },
-        {
-            path: '/ecommerce',
-            name: "ECOMMERCE"
-        },
-        {
-            path: '/customers',
-            name: "CUSTOMERS"
-        },
-        {
-            path: '/blog',
-            name: "BLOG"
-        },
-        {
             path: '/contact',
             name: "CONTACT"
         }
