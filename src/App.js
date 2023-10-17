@@ -6,8 +6,9 @@ import VideoPlayer from './components/video-player';
 import StdButton from './components/std-button';
 import Images from './components/images';
 import Blog from './components/blog';
+import Testimonials from './components/testimonials';
 import Footer from './components/footer';
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 import TopNav from './components/TopNav';
 
 import AOS from 'aos';
@@ -44,13 +45,13 @@ function App() {
           <div className='col-12 d-flex justify-content-center'>
             <div className='row'>
               <div className='col-4'>
-                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000"/>
+                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000" />
               </div>
               <div className='col-4'>
-                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000"/>
+                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000" />
               </div>
               <div className='col-4'>
-                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000"/>
+                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000" />
               </div>
             </div>
           </div>
@@ -68,14 +69,14 @@ function App() {
         <Company />
         <div className='row mt-4 mb-5'>
           <div className='col-12 text-white text-center fs-5' data-aos="fade-in" data-aos-duration="2000">
-            <p>+80 clientes: USA, Latam y Europa.</p>
+            <p>+100 clientes: Latinoamérica.</p>
           </div>
         </div>
         <div className='row mt-5'>
           <div className='col-12'>
             <div className='text-white text-center'>
-              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500" >Somos un verdadero</h1>
-              <h1 className='title_color fs-1' data-aos="fade-down" data-aos-duration="1500">socio para crecer.</h1>
+              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500" >Somos un partner </h1>
+              <h1 className='title_color fs-1' data-aos="fade-down" data-aos-duration="1500">verdadero para crecer.</h1>
             </div>
           </div>
         </div>
@@ -86,10 +87,10 @@ function App() {
         </div>
         <div className='row my-3'>
           <div className='m-auto col-12 col-md-12 col-lg-6 text-white text-center'>
-            <p className='fs-5 text' data-aos="fade-down" data-aos-duration="1500">Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM y USA que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
+            <p className='fs-5 text' data-aos="fade-down" data-aos-duration="1500">Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
           </div>
         </div>
-        <div className='row'>
+        {/* <div className='row'>
           <div className='d-flex justify-content-center'>
             <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
               VideoHeight={"230px"}
@@ -100,7 +101,7 @@ function App() {
           <div className='col-12 text_video text-center'>
             <p>Matias Solina, Founder DCG</p>
           </div>
-        </div>
+        </div> */}
         <StdButton text={"SOLICITAR PRESUPUESTO"} />
         <div className='row my-5'>
           <div className='d-flex justify-content-center my-3 col-12'>
@@ -118,7 +119,7 @@ function App() {
 
         <div className='row'>
           <div className='d-flex justify-content-center my-3 col-12'>
-            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000"/>
+            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000" />
           </div>
         </div>
         <div className='row my-4'>
@@ -128,7 +129,17 @@ function App() {
         </div>
         <div className='row'>
           <div className='d-flex flex-column flex-md-row  my-3 col-12'>
-            <div className='col-md-4 text-white text-center'>
+            <div className='row mt-5'>
+              <div className='mb-3 col-12 col-md-6 col-xl-4'>
+                <Testimonials />
+              </div>
+              <div className='mb-3 col-12 col-md-6 col-xl-4'>
+                <Testimonials />
+              </div>
+              <div className='mb-3 col-12 col-md-6 col-xl-4'>
+                <Testimonials />
+              </div></div>
+            {/* <div className='col-md-4 text-white text-center'>
               <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
                 VideoHeight={"120px"}
                 VideoWidth={"250px"} />
@@ -145,7 +156,7 @@ function App() {
                 VideoHeight={"120px"}
                 VideoWidth={"250px"} />
               <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className='row my-2'>
@@ -162,7 +173,7 @@ function App() {
         </div>
         <div className='row'>
           <div className='d-flex justify-content-center my-3 col-12'>
-            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000"/>
+            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000" />
           </div>
         </div>
         <div className='row my-4'>
@@ -219,7 +230,7 @@ function App() {
         </div>
         <div className='row'>
           <div className='d-flex justify-content-center mb-3 col-12'>
-            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000"/>
+            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000" />
           </div>
         </div>
         <div className='row my-4'>
@@ -233,7 +244,7 @@ function App() {
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           </div>
         </div> */}
-        <div className='row mt-5 mb-3'>
+        {/*<div className='row mt-5 mb-3'>
           <div className='col-12 mt-5'>
             <div className='text-white text-center'>
               <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Nuestro Blog</h1>
@@ -256,7 +267,7 @@ function App() {
             <Blog Image={image} />
           </div>
         </div>
-        <StdButton text={"VISITAR BLOG"} />
+         <StdButton text={"VISITAR BLOG"} /> */}
         <Footer />
 
       </div>

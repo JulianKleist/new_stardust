@@ -8,13 +8,17 @@ const TopNav = () => {
 
     const menuData = [
         {
+            path:'/',
+            name: "HOME"
+        },
+        {
             path: '/contact',
             name: "CONTACT"
         }
     ];
 
     return (
-        <Navbar data-bs-theme="dark" className='navbar pt-4' expand="lg">
+        <Navbar data-bs-theme="dark" className='navbar pt-4 mx-sm-4 mx-md-0' expand="lg">
             <Container>
                 <Navbar.Brand href='#'>
                     <img className='logo' src={logo} />
