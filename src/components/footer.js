@@ -1,5 +1,7 @@
 import React from 'react';
 import SpacerLine from '../components/spacer_line';
+import { AiOutlineYoutube, AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
+
 // import './std-button.css';
 
 class Footer extends React.Component {
@@ -22,13 +24,13 @@ class Footer extends React.Component {
                             <div className='col-12 d-flex justify-content-center col-md-6'>
                                 <div className='row'>
                                     <div className='col-4'>
-                                        <img src="https://placehold.it/30x30" />
+                                        <AiOutlineYoutube size={40}/>
                                     </div>
                                     <div className='col-4'>
-                                        <img src="https://placehold.it/30x30" />
+                                    <AiOutlineFacebook size={40}/>
                                     </div>
                                     <div className='col-4'>
-                                        <img src="https://placehold.it/30x30" />
+                                        <AiOutlineInstagram size={40}/>
                                     </div>
                                 </div>
                             </div>
