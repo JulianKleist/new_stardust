@@ -18,9 +18,7 @@ class Testimonials extends React.Component {
                         <AiFillStar className='text-warning' />
                         </div>
                     </div>
-                    {/* <img src={"https://placehold.it/300x200"} className="card-img-top" /> */}
                     <div className="card-body text-white">
-                        {/* <h5 className="card-title bg-black">Marcas de ropa: 3 ideas de funnels</h5> */}
                         <p className="card-text">"El equipo de TATA se conectó a nuestra compañía como un verdadero equipo de Marketing interno y se hizoz cargo de nuestro canal online de forma exitosa."</p>
                         <div className='row mt-4'>
                             <div className='d-flex justify-content-center'>

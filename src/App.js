@@ -42,18 +42,8 @@ function App() {
           </div>
         </div>
         <div className='row my-2'>
-          <div className='col-12 d-flex justify-content-center'>
-            <div className='row'>
-              <div className='col-4'>
-                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000" />
-              </div>
-              <div className='col-4'>
-                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000" />
-              </div>
-              <div className='col-4'>
-                <img src="https://placehold.it/107x30" data-aos="zoom-in" data-aos-duration="2000" />
-              </div>
-            </div>
+          <div className='d-flex justify-content-center col-12 col-lg-6 mx-auto'>
+          <VideoPlayer />
           </div>
         </div>
         <div className='row mb-5'>
@@ -92,7 +82,7 @@ function App() {
         </div>
         {/* <div className='row'>
           <div className='d-flex justify-content-center'>
-            <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
+            <VideoPlayer embedUrl={"https://youtu.be/L82WOSgNJn8"}
               VideoHeight={"230px"}
               VideoWidth={"400px"} />
             <div className='row'>

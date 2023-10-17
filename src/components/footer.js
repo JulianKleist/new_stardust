@@ -2,8 +2,6 @@ import React from 'react';
 import SpacerLine from '../components/spacer_line';
 import { AiOutlineYoutube, AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 
-// import './std-button.css';
-
 class Footer extends React.Component {
     render() {
         return (
