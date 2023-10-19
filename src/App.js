@@ -42,11 +42,12 @@ function App() {
           </div>
         </div>
         <div className='row my-2'>
-          <div className='d-flex justify-content-center col-12 col-lg-6 mx-auto'>
+          <div className='d-flex justify-content-center col-12 col-lg-6 mx-auto mb-4'>
           <VideoPlayer />
           </div>
         </div>
-        <div className='row mb-5'>
+        <StdButton text={"AGENDA CON NOSOTROS"} />
+        <div className='row mb-5 mt-4'>
           <div className='d-flex justify-content-center my-3 col-12'>
             <SpacerLine width="3px" height="250px" />
           </div>
