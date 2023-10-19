@@ -8,6 +8,7 @@
 
 .std_span:hover {
     background-color: var(--violet);
+    cursor: pointer;
 }
 
 .std_span {

@@ -10,6 +10,7 @@ import Testimonials from './components/testimonials';
 import Footer from './components/footer';
 import { useEffect } from 'react'
 import TopNav from './components/TopNav';
+import {React, useRef} from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,7 +23,14 @@ function App() {
   const isScreenLarge = window.innerWidth >= 1440;
   const ImageUrl = 'https://placehold.it/350x200'
   const ImageUrlLarge = 'https://placehold.it/620x280'
-  const image = "https://placehold.it/200x200";
+  const agenda = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    })
+  }
 
   return (
     <div className="App">
@@ -46,7 +54,12 @@ function App() {
           <VideoPlayer />
           </div>
         </div>
-        <StdButton text={"AGENDA CON NOSOTROS"} />
+        <div className='row mt-4 mb-2' data-aos="fade-up"
+            data-aos-duration="2000">
+                <div className='d-flex justify-content-center col-12'>
+                    <span className='std_span text-white' onClick={() => scrollToSection(agenda)}>AGENDA CON NOSOTROS</span>
+                </div>
+            </div>
         <div className='row mb-5 mt-4'>
           <div className='d-flex justify-content-center my-3 col-12'>
             <SpacerLine width="3px" height="250px" />
@@ -81,18 +94,6 @@ function App() {
             <p className='fs-5 text' data-aos="fade-down" data-aos-duration="1500">Somos responsables del éxito de decenas de compañías que escalaron sus ventas en los últimos 3 años de forma agresiva y sin descanso. Hoy nuestra agenda de trabajo está completa con clientes de todo LATAM que buscan esos mismos resultados. ¿Por qué? Simplemente porque nacimos para generar resultado.</p>
           </div>
         </div>
-        {/* <div className='row'>
-          <div className='d-flex justify-content-center'>
-            <VideoPlayer embedUrl={"https://youtu.be/L82WOSgNJn8"}
-              VideoHeight={"230px"}
-              VideoWidth={"400px"} />
-            <div className='row'>
-            </div>
-          </div>
-          <div className='col-12 text_video text-center'>
-            <p>Matias Solina, Founder DCG</p>
-          </div>
-        </div> */}
         <StdButton text={"SOLICITAR PRESUPUESTO"} />
         <div className='row my-5'>
           <div className='d-flex justify-content-center my-3 col-12'>
@@ -130,24 +131,6 @@ function App() {
               <div className='mb-3 col-12 col-md-6 col-xl-4'>
                 <Testimonials />
               </div></div>
-            {/* <div className='col-md-4 text-white text-center'>
-              <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
-                VideoHeight={"120px"}
-                VideoWidth={"250px"} />
-              <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
-            </div>
-            <div className='col-md-4 text-white text-center'>
-              <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
-                VideoHeight={"120px"}
-                VideoWidth={"250px"} />
-              <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
-            </div>
-            <div className='col-md-4 text-white text-center'>
-              <VideoPlayer embedUrl={"https://www.youtube.com/embed/${videoId}"}
-                VideoHeight={"120px"}
-                VideoWidth={"250px"} />
-              <p className='mt-1 col-12'>Fernando Farré, Infinit Lead Generation</p>
-            </div> */}
           </div>
         </div>
         <div className='row my-2'>
@@ -212,7 +195,7 @@ function App() {
             <SpacerLine width="3px" height="150px" />
           </div>
         </div>
-        <div className='row my-4'>
+        <div ref={agenda} className='row my-4'>
           <div className='col-12'>
             <div className='text-white text-center'>
               <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Consultoría gratuita</h1>
