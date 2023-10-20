@@ -5,12 +5,11 @@ import Company from './components/company';
 import VideoPlayer from './components/video-player';
 import StdButton from './components/std-button';
 import Images from './components/images';
-import Blog from './components/blog';
 import Testimonials from './components/testimonials';
 import Footer from './components/footer';
 import { useEffect } from 'react'
 import TopNav from './components/TopNav';
-import {React, useRef} from 'react';
+import { React, useRef } from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -21,8 +20,28 @@ function App() {
   }, []);
 
   const isScreenLarge = window.innerWidth >= 1440;
-  const ImageUrl = 'https://placehold.it/350x200'
-  const ImageUrlLarge = 'https://placehold.it/620x280'
+  const imgData = [
+    {
+      id: '1',
+      imgUrl: 'https://placehold.it/350x200',
+      imgUrlLarge: 'https://placehold.it/620x280'
+    },
+    {
+      id: '2',
+      imgUrl: 'https://placehold.it/350x200',
+      imgUrlLarge: 'https://placehold.it/620x280'
+    },
+    {
+      id: '3',
+      imgUrl: 'https://placehold.it/350x200',
+      imgUrlLarge: 'https://placehold.it/620x280'
+    },
+    {
+      id: '4',
+      imgUrl: 'https://placehold.it/350x200',
+      imgUrlLarge: 'https://placehold.it/620x280'
+    },
+  ]
   const agenda = useRef(null);
 
   const scrollToSection = (elementRef) => {
@@ -51,15 +70,15 @@ function App() {
         </div>
         <div className='row my-2'>
           <div className='d-flex justify-content-center col-12 col-lg-6 mx-auto mb-4'>
-          <VideoPlayer />
+            <VideoPlayer />
           </div>
         </div>
         <div className='row mt-4 mb-2' data-aos="fade-up"
-            data-aos-duration="2000">
-                <div className='d-flex justify-content-center col-12'>
-                    <span className='std_span text-white' onClick={() => scrollToSection(agenda)}>AGENDA CON NOSOTROS</span>
-                </div>
-            </div>
+          data-aos-duration="2000">
+          <div className='d-flex justify-content-center col-12'>
+            <span className='std_span text-white' onClick={() => scrollToSection(agenda)}>AGENDA CON NOSOTROS</span>
+          </div>
+        </div>
         <div className='row mb-5 mt-4'>
           <div className='d-flex justify-content-center my-3 col-12'>
             <SpacerLine width="3px" height="250px" />
@@ -157,36 +176,13 @@ function App() {
           </div>
         </div>
         <div className='row'>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
-          <div className='d-flex justify-content-center my-3 col-12 col-md-6'>
-            <Images ImageUrl={isScreenLarge ? ImageUrlLarge : ImageUrl} />
-          </div>
+          {
+            imgData.map((item) => (
+              <div className='d-flex justify-content-center my-3 col-12 col-md-6' key={item.id}>
+                <Images ImageUrl={isScreenLarge ? item.imgUrlLarge : item.imgUrl} />
+              </div>
+            ))
+          }
         </div>
 
 
@@ -218,30 +214,6 @@ function App() {
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           </div>
         </div> */}
-        {/*<div className='row mt-5 mb-3'>
-          <div className='col-12 mt-5'>
-            <div className='text-white text-center'>
-              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Nuestro Blog</h1>
-            </div>
-          </div>
-        </div>
-        <div className='row'>
-          <div className='d-flex justify-content-center mb-3 col-12'>
-            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000"/>
-          </div>
-        </div>
-        <div className='row mt-5'>
-          <div className='mb-3 col-12 col-md-6 col-xl-4'>
-            <Blog Image={image} />
-          </div>
-          <div className='mb-3 col-12 col-md-6 col-xl-4'>
-            <Blog Image={image} />
-          </div>
-          <div className='mb-3 col-12 col-md-6 col-xl-4'>
-            <Blog Image={image} />
-          </div>
-        </div>
-         <StdButton text={"VISITAR BLOG"} /> */}
         <Footer />
 
       </div>
