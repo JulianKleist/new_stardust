@@ -9,14 +9,11 @@ class Footer extends React.Component {
                 <SpacerLine width="100%" height="1px" />
                 <div className=' mt-3 col-12 text-white'>
                     <div className='row'>
-                        <div className='d-flex justify-content-center  col-md-6 order-md-1'>
-                            <p>Argentina / Rosario · Moreno 878 · Oficina 8</p>
-                        </div>
                         <div className='d-flex justify-content-center col-12 col-md-6 order-md-3'>
-                            <p>EEUU / Miami · 66 West Flagler Street · Suite 900</p>
+                            <p>Ciudad del Este - Paraguay</p>
                         </div>
                         <div className='d-flex justify-content-center col-12 fs-6 col-md-6 order-md-2'>
-                            <p>contacto@stardust.com</p>
+                            <p>contacto@stardust.com.py</p>
                         </div>
                         <div className='row my-2 order-md-4'>
                             <div className='col-12 d-flex justify-content-center col-md-6'>

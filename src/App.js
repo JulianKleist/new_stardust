@@ -5,12 +5,13 @@ import Company from './components/company';
 import VideoPlayer from './components/video-player';
 import StdButton from './components/std-button';
 import Images from './components/images';
-import Blog from './components/blog';
 import Testimonials from './components/testimonials';
 import Footer from './components/footer';
 import { useEffect } from 'react'
 import TopNav from './components/TopNav';
 import {React, useRef} from 'react';
+import {InlineWidget} from 'react-calendly'
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -212,36 +213,13 @@ function App() {
             <p className='fs-5 text' data-aos="fade-down" data-aos-duration="1500">Agenda una videollamada de diagnóstico y consultoría totalmente gratuita. Nuestros especialistas realizarán un diagnóstico y te brindará una evaluación de posibles alterativas para tu plan de crecimiento!</p>
           </div>
         </div>
-        {/* <div className='row'>
+        <div className='row'>
           <div className='col-12 d-flex justify-content-center'>
-            <div class="calendly-inline-widget" data-url="https://calendly.com/ejirouweghrepha"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          </div>
-        </div> */}
-        {/*<div className='row mt-5 mb-3'>
-          <div className='col-12 mt-5'>
-            <div className='text-white text-center'>
-              <h1 className='title fs-1' data-aos="fade-down" data-aos-duration="1500">Nuestro Blog</h1>
+            <div>
+              <InlineWidget url="https://calendly.com/stardustmarketing/marketing-digital-performance" styles={{width: '600px'}}/>
             </div>
           </div>
         </div>
-        <div className='row'>
-          <div className='d-flex justify-content-center mb-3 col-12'>
-            <SpacerLine height="3px" DataAos="fade-down" DataAosDuration="2000"/>
-          </div>
-        </div>
-        <div className='row mt-5'>
-          <div className='mb-3 col-12 col-md-6 col-xl-4'>
-            <Blog Image={image} />
-          </div>
-          <div className='mb-3 col-12 col-md-6 col-xl-4'>
-            <Blog Image={image} />
-          </div>
-          <div className='mb-3 col-12 col-md-6 col-xl-4'>
-            <Blog Image={image} />
-          </div>
-        </div>
-         <StdButton text={"VISITAR BLOG"} /> */}
         <Footer />
 
       </div>
