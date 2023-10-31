@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 
 class Testimonials extends React.Component {
     render() {
-        const { text, img, name, job } = this.props;
+        const { text, img, business, customer } = this.props;
 
         return (
             <div className=''>
@@ -18,14 +18,14 @@ class Testimonials extends React.Component {
                         <AiFillStar className='text-warning' />
                         </div>
                     </div>
-                    <div className="card-body text-white">
-                        <p className="card-text">"El equipo de TATA se conectó a nuestra compañía como un verdadero equipo de Marketing interno y se hizoz cargo de nuestro canal online de forma exitosa."</p>
+                    <div className="card-body text-white px-4">
+                        <p className="card-text" style={{'minHeight': "100px"}}>{text}</p>
                         <div className='row mt-4'>
-                            <div className='d-flex justify-content-center'>
-                                <img src={"https://placehold.it/100x100"} className="profile_pic" />
-                                <div className='px-4'>
-                                <h5>F. Prado</h5>
-                                <p>Brand Manager Kazuma</p>
+                            <div className='d-flex justify-content-start'>
+                                {/*<img src={"https://placehold.it/100x100"} className="profile_pic" />*/}
+                                <div>
+                                <h5>{customer}</h5>
+                                <p>{business}</p>
                                 </div>
                             </div>
                         </div>
